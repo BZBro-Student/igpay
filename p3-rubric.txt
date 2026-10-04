@@ -1,0 +1,37 @@
+Grade: /70
+
+Rubric for Javascript project:
+
+Overall Comments:
+
+-Submission:
+	- completed igpay.js and any other javascript
+    - a README.md file that has been completed with reflection and performance analysis
+
+Documentation:
+	-README.md:
+        -Reflection about using Javascript to solve the task      [5 points]
+        -Performance Reflection included in Results Section       [5 points]
+
+Visual Checks:
+	-igpay.js uses Readline library                                                     [5 points]
+
+	-no 3rd party packages or libraries are used (no new dependencies in package.json)  [5 points]
+
+	-Other comments:
+
+Automated Checks:
+	-ESLint passes without any errors or warnings               [15 points]
+
+	-igpay.js properly translates consonant sounds              [10 points]
+
+	-igpay.js properly translates vowel sounds including 'y'    [10 points]
+
+	-igpay.js properly ignores non-alphabet characters          [10 points]
+
+	-igpay.js properly preserves capitalization                 [5 points]
+
+    -Other comments:
+
+Extra Credit: [5 points]
+    -Demonstrate a performance improvement and evidence of using the NodeJS profiler.
