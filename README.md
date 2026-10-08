@@ -36,6 +36,8 @@ you were asked to perform as part of the project.
 https://www.speechactive.com/english-consonants-ipa-international-phonetic-alphabet/?v=0b3b97fa6688
 https://www.merriam-webster.com/grammar/why-y-is-sometimes-a-vowel-usage
 https://stackoverflow.com/questions/20086849/how-to-read-from-stdin-line-by-line-in-node
+https://www.reddit.com/r/learnprogramming/comments/f3pvmp/is_it_possible_to_use_includes_to_find_certain/
+https://flaviocopes.com/how-to-uppercase-first-letter-javascript/
 ----------
 
 ## Notes
