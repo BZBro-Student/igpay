@@ -31,6 +31,8 @@ about it to use it as quickly as possible?
 This section presents timing and other results of any experiments that
 you were asked to perform as part of the project.
 
+## Extra Credit
+
 ## Sources used
 
 https://www.speechactive.com/english-consonants-ipa-international-phonetic-alphabet/?v=0b3b97fa6688
