@@ -78,8 +78,22 @@ I'll have to look into that more for the extra credit.
 ## Extra Credit
 
 Based on my log file the biggest improvement to be comes from how im logging the output, 30% of my runtime
-is the program printing the output to stdout. It logs after each line is processed. That is super inneficient
-so a buffered log would be better. Upon implementing these were the results:
+is the program printing the output to stdout. It logs after each line is processed. Looking into .log() it 
+uses a few heavy things in the background that can bog down the program specifically it uses the format utility. 
+Since the stream we are printing isn't using variable formating or other fancy string things I replaced it with 
+process.stdout.write which is the basic backend of the .log just without the the overhead of .log(). After doing 
+that I was able to get this timing: 
+```
+________________________________________________________
+Executed in  285.17 millis    fish           external
+   usr time  165.25 millis  837.00 micros  164.41 millis
+   sys time  142.03 millis    0.00 micros  142.03 millis
+```
+Definitely slightly faster, I think the next step would be to read the file in as one big chunk and process that in memory
+instead of reading line by line. The profiler shows that a significant portion of the process is IO related. Reading and writing
+from the file is significantly slower than just keeping it all in memory. There are issues with keeping it in memory as the space
+it takes could cause issues (if we were processing significant amounts of data) but this small sample set will be fine.
+
 
 ## Sources used
 Dev Research:
@@ -105,6 +119,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addi
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat
 
 https://docs.google.com/document/d/1o-MJPAddpfBfDZCkIHNKbMiM86iDFld7idGbNQLuKIQ/preview?tab=t.0
+
+https://www.geeksforgeeks.org/node-js/difference-between-process-stdout-write-and-console-log-in-node-js/
 ----------
 
 ## Notes

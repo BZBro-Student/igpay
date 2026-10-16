@@ -1,94 +1,78 @@
-Statistical profiling result from isolate-0x56161a528000-39378-v8.log, (245 ticks, 0 unaccounted, 0 excluded).
+Statistical profiling result from isolate-0x55bf04df8000-95034-v8.log, (198 ticks, 1 unaccounted, 0 excluded).
 
  [Shared libraries]:
    ticks  total  nonlib   name
-     74   30.2%          /usr/lib/libc.so.6
-     49   20.0%          /usr/bin/node
-      1    0.4%          [vdso]
-      1    0.4%          /usr/lib/libuv.so.1.0.0
+     60   30.3%          /usr/lib/libc.so.6
+     44   22.2%          /usr/bin/node
 
  [JavaScript]:
    ticks  total  nonlib   name
-      9    3.7%    7.5%  Builtin: SetPrototypeForEach
-      8    3.3%    6.7%  JS: *writeOrBuffer node:internal/streams/writable:550:23
-      8    3.3%    6.7%  JS: *log node:internal/console/constructor:413:6
-      6    2.4%    5.0%  Builtin: FindOrderedHashSetEntry
-      5    2.0%    4.2%  Builtin: RecordWriteSaveFP
-      4    1.6%    3.3%  Builtin: LoadIC
-      4    1.6%    3.3%  Builtin: CallApiCallbackOptimizedNoProfiling
-      3    1.2%    2.5%  JS: *onwrite node:internal/streams/writable:617:17
-      3    1.2%    2.5%  Builtin: ArrayPrototypeJoin
-      2    0.8%    1.7%  JS: +onwrite node:internal/streams/writable:617:17
-      2    0.8%    1.7%  JS: +emit node:events:489:44
-      2    0.8%    1.7%  JS: *removeListener node:events:680:28
-      2    0.8%    1.7%  JS: *<anonymous> node:internal/readline/interface:621:17
-      2    0.8%    1.7%  JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:41:17
-      2    0.8%    1.7%  Builtin: StringPrototypeSplit
-      2    0.8%    1.7%  Builtin: StoreIC
-      2    0.8%    1.7%  Builtin: KeyedLoadIC_PolymorphicName
-      2    0.8%    1.7%  Builtin: KeyedLoadIC_Megamorphic
-      2    0.8%    1.7%  Builtin: KeyedLoadIC
-      2    0.8%    1.7%  Builtin: GrowFastSmiOrObjectElements
-      2    0.8%    1.7%  Builtin: CallFunction_ReceiverIsNullOrUndefined
-      1    0.4%    0.8%  JS: +fromStringFast node:buffer:496:24
-      1    0.4%    0.8%  JS: +<anonymous> node:internal/validators:119:3
-      1    0.4%    0.8%  JS: *_write node:internal/streams/writable:452:16
-      1    0.4%    0.8%  JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:91:28
-      1    0.4%    0.8%  Builtin: StringToLowerCaseIntl
-      1    0.4%    0.8%  Builtin: StringIndexOf
-      1    0.4%    0.8%  Builtin: StringAdd_CheckNone
-      1    0.4%    0.8%  Builtin: LoadICTrampoline
-      1    0.4%    0.8%  Builtin: KeyedStoreIC
-      1    0.4%    0.8%  Builtin: FastNewRestArguments
-      1    0.4%    0.8%  Builtin: CallFunction_ReceiverIsAny
-      1    0.4%    0.8%  Builtin: CEntry_Return1_ArgvOnStack_NoBuiltinExit
+      8    4.0%    8.5%  JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:42:17
+      6    3.0%    6.4%  JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      6    3.0%    6.4%  Builtin: FindOrderedHashSetEntry
+      5    2.5%    5.3%  Builtin: CallApiCallbackOptimizedNoProfiling
+      4    2.0%    4.3%  JS: *<anonymous> node:internal/readline/interface:621:17
+      3    1.5%    3.2%  JS: *writeOrBuffer node:internal/streams/writable:550:23
+      3    1.5%    3.2%  JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:92:28
+      3    1.5%    3.2%  Builtin: SetPrototypeForEach
+      3    1.5%    3.2%  Builtin: RecordWriteSaveFP
+      3    1.5%    3.2%  Builtin: LoadGlobalICTrampoline
+      3    1.5%    3.2%  Builtin: CreateTypedArray
+      3    1.5%    3.2%  Builtin: CallFunction_ReceiverIsAny
+      3    1.5%    3.2%  Builtin: ArrayPrototypeJoin
+      2    1.0%    2.1%  Builtin: StringIndexOf
+      2    1.0%    2.1%  Builtin: LoadJoinElement_FastSmiOrObjectElements_0
+      2    1.0%    2.1%  Builtin: LoadIC
+      1    0.5%    1.1%  JS: ^<anonymous> node:internal/readline/interface:621:17
+      1    0.5%    1.1%  JS: +<anonymous> node:internal/validators:98:3
+      1    0.5%    1.1%  JS: +<anonymous> node:internal/readline/interface:621:17
+      1    0.5%    1.1%  JS: *onwrite node:internal/streams/writable:617:17
+      1    0.5%    1.1%  Builtin: ToBooleanForBaselineJump
+      1    0.5%    1.1%  Builtin: StringSlowFlatten
+      1    0.5%    1.1%  Builtin: StringAdd_CheckNone
+      1    0.5%    1.1%  Builtin: LoadGlobalIC
+      1    0.5%    1.1%  Builtin: KeyedLoadIC_PolymorphicName
+      1    0.5%    1.1%  Builtin: KeyedLoadIC_Megamorphic
+      1    0.5%    1.1%  Builtin: Call_ReceiverIsAny
+      1    0.5%    1.1%  Builtin: CEntry_Return1_ArgvOnStack_NoBuiltinExit
 
  [C++]:
    ticks  total  nonlib   name
-      7    2.9%    5.8%  fputc@@GLIBC_2.2.5
-      4    1.6%    3.3%  v8::Context::GetNumberOfEmbedderDataFields()
-      4    1.6%    3.3%  std::ostream::put(char)@@GLIBCXX_3.4
-      3    1.2%    2.5%  v8::ArrayBufferView::Buffer()
-      2    0.8%    1.7%  v8::Value::IsFunction() const
-      1    0.4%    0.8%  v8::Value::IsNumber() const
-      1    0.4%    0.8%  v8::String::ValueView::ValueView(v8::Isolate*, v8::Local<v8::String>)
-      1    0.4%    0.8%  v8::HandleScope::HandleScope(v8::Isolate*)
-      1    0.4%    0.8%  v8::Function::Call(v8::Isolate*, v8::Local<v8::Context>, v8::Local<v8::Value>, int, v8::Local<v8::Value>*)
-      1    0.4%    0.8%  v8::ArrayBufferView::ByteLength()
-      1    0.4%    0.8%  syscall@@GLIBC_2.2.5
-      1    0.4%    0.8%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
-      1    0.4%    0.8%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
-      1    0.4%    0.8%  simdjson::icelake::dom_parser_implementation::stage1(unsigned char const*, unsigned long, simdjson::stage1_mode)
-      1    0.4%    0.8%  node::StringBytes::Write(v8::Isolate*, char*, unsigned long, v8::Local<v8::Value>, node::encoding)
-      1    0.4%    0.8%  isprint@@GLIBC_2.2.5
-      1    0.4%    0.8%  cfree@GLIBC_2.2.5
-      1    0.4%    0.8%  __mmap@@GLIBC_PRIVATE
-      1    0.4%    0.8%  __madvise@@GLIBC_PRIVATE
+      5    2.5%    5.3%  syscall@@GLIBC_2.2.5
+      4    2.0%    4.3%  fputc@@GLIBC_2.2.5
+      2    1.0%    2.1%  v8::HandleScope::HandleScope(v8::Isolate*)
+      2    1.0%    2.1%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+      1    0.5%    1.1%  v8::internal::ThreadIsolation::JitPageReference::AllocationContaining(unsigned long)
+      1    0.5%    1.1%  v8::base::TimeTicks::IsHighResolution()
+      1    0.5%    1.1%  v8::Value::StrictEquals(v8::Local<v8::Value>) const
+      1    0.5%    1.1%  uv_fs_req_cleanup
+      1    0.5%    1.1%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+      1    0.5%    1.1%  std::ostream::put(char)@@GLIBCXX_3.4
+      1    0.5%    1.1%  std::filesystem::__cxx11::path::_M_split_cmpts()@@GLIBCXX_3.4.26
+      1    0.5%    1.1%  isprint@@GLIBC_2.2.5
+      1    0.5%    1.1%  __write@@GLIBC_2.2.5
 
  [Summary]:
    ticks  total  nonlib   name
-     86   35.1%   71.7%  JavaScript
-     34   13.9%   28.3%  C++
-      6    2.4%    5.0%  GC
-    125   51.0%          Shared libraries
+     71   35.9%   75.5%  JavaScript
+     22   11.1%   23.4%  C++
+      6    3.0%    6.4%  GC
+    104   52.5%          Shared libraries
+      1    0.5%          Unaccounted
 
  [C++ entry points]:
    ticks    cpp   total   name
-      5   17.9%    2.0%  fputc@@GLIBC_2.2.5
-      4   14.3%    1.6%  v8::Context::GetNumberOfEmbedderDataFields()
-      4   14.3%    1.6%  std::ostream::put(char)@@GLIBCXX_3.4
-      3   10.7%    1.2%  v8::ArrayBufferView::Buffer()
-      2    7.1%    0.8%  v8::Value::IsFunction() const
-      1    3.6%    0.4%  v8::Value::IsNumber() const
-      1    3.6%    0.4%  v8::String::ValueView::ValueView(v8::Isolate*, v8::Local<v8::String>)
-      1    3.6%    0.4%  v8::HandleScope::HandleScope(v8::Isolate*)
-      1    3.6%    0.4%  v8::Function::Call(v8::Isolate*, v8::Local<v8::Context>, v8::Local<v8::Value>, int, v8::Local<v8::Value>*)
-      1    3.6%    0.4%  v8::ArrayBufferView::ByteLength()
-      1    3.6%    0.4%  simdjson::icelake::dom_parser_implementation::stage1(unsigned char const*, unsigned long, simdjson::stage1_mode)
-      1    3.6%    0.4%  node::StringBytes::Write(v8::Isolate*, char*, unsigned long, v8::Local<v8::Value>, node::encoding)
-      1    3.6%    0.4%  isprint@@GLIBC_2.2.5
-      1    3.6%    0.4%  cfree@GLIBC_2.2.5
-      1    3.6%    0.4%  __madvise@@GLIBC_PRIVATE
+      4   25.0%    2.0%  fputc@@GLIBC_2.2.5
+      2   12.5%    1.0%  v8::HandleScope::HandleScope(v8::Isolate*)
+      2   12.5%    1.0%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+      1    6.3%    0.5%  v8::base::TimeTicks::IsHighResolution()
+      1    6.3%    0.5%  v8::Value::StrictEquals(v8::Local<v8::Value>) const
+      1    6.3%    0.5%  uv_fs_req_cleanup
+      1    6.3%    0.5%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+      1    6.3%    0.5%  std::ostream::put(char)@@GLIBCXX_3.4
+      1    6.3%    0.5%  std::filesystem::__cxx11::path::_M_split_cmpts()@@GLIBCXX_3.4.26
+      1    6.3%    0.5%  isprint@@GLIBC_2.2.5
+      1    6.3%    0.5%  __write@@GLIBC_2.2.5
 
  [Bottom up (heavy) profile]:
   Note: percentage shows a share of a particular caller in the total
@@ -96,122 +80,187 @@ Statistical profiling result from isolate-0x56161a528000-39378-v8.log, (245 tick
   Callers occupying less than 1.0% are not shown.
 
    ticks parent  name
-     74   30.2%  /usr/lib/libc.so.6
-     44   59.5%    JS: *writeOrBuffer node:internal/streams/writable:550:23
-     44  100.0%      JS: *_write node:internal/streams/writable:452:16
-     44  100.0%        JS: *log node:internal/console/constructor:413:6
-     44  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
-     44  100.0%            JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
-     10   13.5%    JS: +writeSync node:fs:943:19
-     10  100.0%      JS: +writeOrBuffer node:internal/streams/writable:550:23
-      9   90.0%        JS: +_write node:internal/streams/writable:452:16
-      9  100.0%          JS: +<anonymous> node:internal/console/constructor:286:56
-      9  100.0%            JS: +log node:internal/console/constructor:413:6
-      1   10.0%        JS: *_write node:internal/streams/writable:452:16
-      1  100.0%          JS: *<anonymous> node:internal/console/constructor:286:56
-      1  100.0%            JS: +log node:internal/console/constructor:413:6
-      5    6.8%    /usr/bin/node
-      1   20.0%      JS: ~ondata node:internal/readline/interface:267:18
-      1  100.0%        JS: ~addChunk node:internal/streams/readable:557:18
-      1  100.0%          JS: ~readableAddChunkPushByteMode node:internal/streams/readable:470:38
-      1  100.0%            JS: ~Readable.push node:internal/streams/readable:394:35
-      1   20.0%      JS: ~addChunk node:internal/streams/readable:557:18
-      1  100.0%        JS: ~readableAddChunkPushByteMode node:internal/streams/readable:470:38
-      1  100.0%          JS: ~Readable.push node:internal/streams/readable:394:35
-      1  100.0%            JS: ~onStreamRead node:internal/stream_base_commons:166:22
-      1   20.0%      JS: ~<anonymous> node:internal/main/run_main_module:1:1
-      1   20.0%      Builtin: StringPrototypeSlice
-      1  100.0%        JS: ~<anonymous> node:internal/main/run_main_module:1:1
-      1   20.0%      Builtin: CallApiCallbackGeneric
-      1  100.0%        JS: ~<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
-      1  100.0%          JS: ^emit node:events:489:44
-      1  100.0%            JS: ~<anonymous> node:internal/readline/interface:467:12
-      3    4.1%    JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
-      3  100.0%      JS: *<anonymous> node:internal/readline/interface:621:17
-      2   66.7%        JS: ~ondata node:internal/readline/interface:267:18
-      2  100.0%          JS: *emit node:events:489:44
-      2  100.0%            JS: ~addChunk node:internal/streams/readable:557:18
-      1   33.3%        JS: ^ondata node:internal/readline/interface:267:18
-      1  100.0%          JS: *emit node:events:489:44
-      1  100.0%            JS: ^addChunk node:internal/streams/readable:557:18
-      2    2.7%    JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
-      2  100.0%      JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
-      1   50.0%        Script: ~<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:1:1
-      1  100.0%          Builtin: GeneratorPrototypeNext
-      1  100.0%            Builtin: CallApiCallbackGeneric
-      1   50.0%        JS: ~<anonymous> node:internal/streams/duplex:1:1
-      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
-      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
-
-     49   20.0%  /usr/bin/node
-     19   38.8%    /usr/bin/node
-     10   52.6%      Builtin: StringPrototypeSplit
-      8   80.0%        JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
-      7   87.5%          JS: *<anonymous> node:internal/readline/interface:621:17
-      5   71.4%            JS: ~ondata node:internal/readline/interface:267:18
-      2   28.6%            JS: ^ondata node:internal/readline/interface:267:18
-      1   12.5%          JS: *emit node:events:489:44
+     60   30.3%  /usr/lib/libc.so.6
+     42   70.0%    JS: *writeOrBuffer node:internal/streams/writable:550:23
+     41   97.6%      JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+     37   90.2%        JS: *<anonymous> node:internal/readline/interface:621:17
+     22   59.5%          JS: ^ondata node:internal/readline/interface:267:18
+     22  100.0%            JS: *emit node:events:489:44
+     15   40.5%          JS: ~ondata node:internal/readline/interface:267:18
+     15  100.0%            JS: *emit node:events:489:44
+      2    4.9%        JS: +emit node:events:489:44
+      2  100.0%          JS: +<anonymous> node:internal/readline/interface:621:17
+      2  100.0%            JS: ~ondata node:internal/readline/interface:267:18
+      2    4.9%        JS: *emit node:events:489:44
+      2  100.0%          JS: +<anonymous> node:internal/readline/interface:621:17
+      2  100.0%            JS: ~ondata node:internal/readline/interface:267:18
+      1    2.4%      JS: *_write node:internal/streams/writable:452:16
+      1  100.0%        JS: +<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      1  100.0%          JS: +emit node:events:489:44
       1  100.0%            JS: +<anonymous> node:internal/readline/interface:621:17
-      1   10.0%        JS: ^<anonymous> node:internal/readline/interface:621:17
-      1  100.0%          JS: ~ondata node:internal/readline/interface:267:18
+      4    6.7%    JS: +writeSync node:fs:943:19
+      4  100.0%      JS: +writeOrBuffer node:internal/streams/writable:550:23
+      4  100.0%        JS: +_write node:internal/streams/writable:452:16
+      4  100.0%          JS: +<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      4  100.0%            JS: +emit node:events:489:44
+      3    5.0%    /usr/bin/node
+      1   33.3%      JS: ~readableAddChunkPushByteMode node:internal/streams/readable:470:38
+      1  100.0%        JS: ~Readable.push node:internal/streams/readable:394:35
+      1  100.0%          JS: ~onStreamRead node:internal/stream_base_commons:166:22
+      1   33.3%      JS: ~onwrite node:internal/streams/writable:617:17
+      1  100.0%        JS: ~WritableState.onwrite node:internal/streams/writable:351:18
+      1  100.0%          JS: ~SyncWriteStream._write node:internal/fs/sync_write_stream:25:44
+      1  100.0%            JS: ~writeOrBuffer node:internal/streams/writable:550:23
+      1   33.3%      Builtin: StringPrototypeSplit
+      1  100.0%        JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      1  100.0%          JS: *<anonymous> node:internal/readline/interface:621:17
+      1  100.0%            JS: ~ondata node:internal/readline/interface:267:18
+      2    3.3%    JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:92:28
+      2  100.0%      Builtin: SetPrototypeForEach
+      1   50.0%        JS: +<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:42:17
+      1  100.0%          JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
       1  100.0%            JS: +emit node:events:489:44
-      1   10.0%        JS: *<anonymous> node:internal/readline/interface:621:17
-      1  100.0%          JS: ^ondata node:internal/readline/interface:267:18
+      1   50.0%        JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:42:17
+      1  100.0%          JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      1  100.0%            JS: *<anonymous> node:internal/readline/interface:621:17
+      1    1.7%    JS: ^writeSync node:fs:943:19
+      1  100.0%      JS: ^SyncWriteStream._write node:internal/fs/sync_write_stream:25:44
+      1  100.0%        JS: ^writeOrBuffer node:internal/streams/writable:550:23
+      1  100.0%          JS: ^_write node:internal/streams/writable:452:16
+      1  100.0%            JS: ^Writable.write node:internal/streams/writable:506:36
+
+     44   22.2%  /usr/bin/node
+     15   34.1%    /usr/bin/node
+      7   46.7%      Builtin: StringPrototypeSplit
+      4   57.1%        JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      4  100.0%          JS: *<anonymous> node:internal/readline/interface:621:17
+      2   50.0%            JS: ~ondata node:internal/readline/interface:267:18
+      2   50.0%            JS: ^ondata node:internal/readline/interface:267:18
+      2   28.6%        JS: *<anonymous> node:internal/readline/interface:621:17
+      1   50.0%          JS: ~ondata node:internal/readline/interface:267:18
       1  100.0%            JS: *emit node:events:489:44
-      2   10.5%      Builtin: StringPrototypeSlice
-      2  100.0%        JS: ~<anonymous> node:internal/main/run_main_module:1:1
-      1    5.3%      Script: ~<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:1:1
-      1  100.0%        Builtin: GeneratorPrototypeNext
-      1  100.0%          Builtin: CallApiCallbackGeneric
-      1  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
-      1    5.3%      JS: ~createInterface node:readline:213:25
-      1  100.0%        Script: ~<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:1:1
-      1  100.0%          Builtin: GeneratorPrototypeNext
-      1  100.0%            Builtin: CallApiCallbackGeneric
-      1    5.3%      JS: ~_destroy node:internal/streams/destroy:90:18
-      1  100.0%        JS: ~destroy node:internal/streams/destroy:49:17
-      1  100.0%          JS: ~Writable.destroy node:internal/streams/writable:1116:38
-      1  100.0%            JS: ~endReadableNT node:internal/streams/readable:1752:23
-      1    5.3%      JS: ~<anonymous> node:string_decoder:1:1
+      1   50.0%          JS: ^ondata node:internal/readline/interface:267:18
+      1  100.0%            JS: *emit node:events:489:44
+      1   14.3%        JS: +<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      1  100.0%          JS: +emit node:events:489:44
+      1  100.0%            JS: +<anonymous> node:internal/readline/interface:467:12
+      3   20.0%      JS: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    6.7%      JS: ~<anonymous> node:net:1:1
       1  100.0%        JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
       1  100.0%          JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
-      1  100.0%            JS: ~<anonymous> node:internal/readline/interface:1:1
-      1    5.3%      JS: ~<anonymous> node:internal/main/run_main_module:1:1
-      1    5.3%      JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:41:17
-      1  100.0%        JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
+      1  100.0%            Script: ~<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:1:1
+      1    6.7%      JS: ~<anonymous> node:internal/readline/utils:1:1
+      1  100.0%        JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      1  100.0%          JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      1  100.0%            JS: ~<anonymous> node:internal/readline/callbacks:1:1
+      1    6.7%      JS: *writeOrBuffer node:internal/streams/writable:550:23
+      1  100.0%        JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
       1  100.0%          JS: *<anonymous> node:internal/readline/interface:621:17
-      1  100.0%            JS: ^ondata node:internal/readline/interface:267:18
-      6   12.2%    JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
-      6  100.0%      JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
-      1   16.7%        JS: ~<anonymous> node:stream:1:1
+      1  100.0%            JS: ~ondata node:internal/readline/interface:267:18
+      1    6.7%      JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:42:17
+      1  100.0%        JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      1  100.0%          JS: *<anonymous> node:internal/readline/interface:621:17
+      1  100.0%            JS: ~ondata node:internal/readline/interface:267:18
+      1    6.7%      Builtin: ArrayForEach
+      1  100.0%        JS: ~<anonymous> node:internal/main/run_main_module:1:1
+      9   20.5%    JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      8   88.9%      JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      3   37.5%        Script: ~<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:1:1
+      3  100.0%          Builtin: GeneratorPrototypeNext
+      3  100.0%            Builtin: CallApiCallbackGeneric
+      2   25.0%        JS: ~<anonymous> node:internal/streams/duplex:1:1
+      2  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      2  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      1   12.5%        JS: ~<anonymous> node:tty:1:1
       1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
       1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
-      1   16.7%        JS: ~<anonymous> node:net:1:1
+      1   12.5%        JS: ~<anonymous> node:internal/streams/readable:1:1
       1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
       1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
-      1   16.7%        JS: ~<anonymous> node:internal/streams/pipeline:1:1
+      1   12.5%        JS: ~<anonymous> node:internal/repl/history:1:1
       1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
       1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
-      1   16.7%        JS: ~<anonymous> node:internal/streams/operators:1:1
-      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
-      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
-      1   16.7%        JS: ~<anonymous> node:internal/readline/emitKeypressEvents:1:1
-      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
-      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
-      1   16.7%        JS: ~<anonymous> node:internal/readline/callbacks:1:1
-      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
-      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
-      5   10.2%    JS: *_write node:internal/streams/writable:452:16
-      5  100.0%      JS: *log node:internal/console/constructor:413:6
-      5  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
-      5  100.0%          JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
-      5  100.0%            JS: *<anonymous> node:internal/readline/interface:621:17
-      4    8.2%    JS: *writeOrBuffer node:internal/streams/writable:550:23
-      4  100.0%      JS: *_write node:internal/streams/writable:452:16
-      4  100.0%        JS: *log node:internal/console/constructor:413:6
-      4  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
-      4  100.0%            JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
-      2    4.1%    JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
+      1   11.1%      JS: ~<anonymous> node:internal/main/run_main_module:1:1
+      3    6.8%    JS: +writeSync node:fs:943:19
+      3  100.0%      JS: +writeOrBuffer node:internal/streams/writable:550:23
+      3  100.0%        JS: +_write node:internal/streams/writable:452:16
+      3  100.0%          JS: +<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      3  100.0%            JS: +emit node:events:489:44
+      3    6.8%    JS: *writeOrBuffer node:internal/streams/writable:550:23
+      3  100.0%      JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      3  100.0%        JS: *<anonymous> node:internal/readline/interface:621:17
+      2   66.7%          JS: ~ondata node:internal/readline/interface:267:18
+      2  100.0%            JS: *emit node:events:489:44
+      1   33.3%          JS: ^ondata node:internal/readline/interface:267:18
+      1  100.0%            JS: *emit node:events:489:44
+      2    4.5%    JS: *fromStringFast node:buffer:496:24
+      2  100.0%      JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      2  100.0%        JS: *<anonymous> node:internal/readline/interface:621:17
+      1   50.0%          JS: ~ondata node:internal/readline/interface:267:18
+      1  100.0%            JS: *emit node:events:489:44
+      1   50.0%          JS: ^ondata node:internal/readline/interface:267:18
+      1  100.0%            JS: *emit node:events:489:44
+      1    2.3%    JS: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.3%    JS: +utf8Write node:internal/buffer:988:19
+      1  100.0%      JS: +fromStringFast node:buffer:496:24
+      1  100.0%        JS: +fromString node:buffer:529:20
+      1  100.0%          JS: ^from node:buffer:337:28
+      1  100.0%            JS: +_write node:internal/streams/writable:452:16
+      1    2.3%    JS: *utf8Write node:internal/buffer:988:19
+      1  100.0%      JS: +fromStringFast node:buffer:496:24
+      1  100.0%        JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      1  100.0%          JS: +emit node:events:489:44
+      1  100.0%            JS: +<anonymous> node:internal/readline/interface:621:17
+
+      8    4.0%  JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:42:17
+      8  100.0%    JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      8  100.0%      JS: *<anonymous> node:internal/readline/interface:621:17
+      6   75.0%        JS: ^ondata node:internal/readline/interface:267:18
+      6  100.0%          JS: *emit node:events:489:44
+      6  100.0%            JS: ^addChunk node:internal/streams/readable:557:18
+      2   25.0%        JS: ~ondata node:internal/readline/interface:267:18
+      2  100.0%          JS: *emit node:events:489:44
+      2  100.0%            JS: ~addChunk node:internal/streams/readable:557:18
+
+      6    3.0%  JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      6  100.0%    JS: *<anonymous> node:internal/readline/interface:621:17
+      5   83.3%      JS: ^ondata node:internal/readline/interface:267:18
+      5  100.0%        JS: *emit node:events:489:44
+      5  100.0%          JS: ^addChunk node:internal/streams/readable:557:18
+      5  100.0%            JS: ^readableAddChunkPushByteMode node:internal/streams/readable:470:38
+      1   16.7%      JS: ~ondata node:internal/readline/interface:267:18
+      1  100.0%        JS: *emit node:events:489:44
+      1  100.0%          JS: ~addChunk node:internal/streams/readable:557:18
+      1  100.0%            JS: ~readableAddChunkPushByteMode node:internal/streams/readable:470:38
+
+      6    3.0%  Builtin: FindOrderedHashSetEntry
+      4   66.7%    JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:42:17
+      4  100.0%      JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      4  100.0%        JS: *<anonymous> node:internal/readline/interface:621:17
+      2   50.0%          JS: ~ondata node:internal/readline/interface:267:18
+      2  100.0%            JS: *emit node:events:489:44
+      2   50.0%          JS: ^ondata node:internal/readline/interface:267:18
+      2  100.0%            JS: *emit node:events:489:44
+      2   33.3%    Builtin: SetPrototypeHas
+      2  100.0%      JS: +<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:42:17
+      1   50.0%        JS: +<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      1  100.0%          JS: +emit node:events:489:44
+      1  100.0%            JS: +<anonymous> node:internal/readline/interface:621:17
+      1   50.0%        JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      1  100.0%          JS: *<anonymous> node:internal/readline/interface:621:17
+      1  100.0%            JS: ~ondata node:internal/readline/interface:267:18
+
+      5    2.5%  syscall@@GLIBC_2.2.5
+
+      5    2.5%  Builtin: CallApiCallbackOptimizedNoProfiling
+      3   60.0%    JS: *writeOrBuffer node:internal/streams/writable:550:23
+      3  100.0%      JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      3  100.0%        JS: *<anonymous> node:internal/readline/interface:621:17
+      2   66.7%          JS: ^ondata node:internal/readline/interface:267:18
+      2  100.0%            JS: *emit node:events:489:44
+      1   33.3%          JS: ~ondata node:internal/readline/interface:267:18
+      1  100.0%            JS: *emit node:events:489:44
+      2   40.0%    JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
       2  100.0%      JS: *<anonymous> node:internal/readline/interface:621:17
       1   50.0%        JS: ~ondata node:internal/readline/interface:267:18
       1  100.0%          JS: *emit node:events:489:44
@@ -219,97 +268,114 @@ Statistical profiling result from isolate-0x56161a528000-39378-v8.log, (245 tick
       1   50.0%        JS: ^ondata node:internal/readline/interface:267:18
       1  100.0%          JS: *emit node:events:489:44
       1  100.0%            JS: ^addChunk node:internal/streams/readable:557:18
-      1    2.0%    JS: +<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
-      1  100.0%      JS: +emit node:events:489:44
-      1  100.0%        JS: +<anonymous> node:internal/readline/interface:467:12
-      1  100.0%          JS: ^<anonymous> node:internal/readline/interface:621:17
-      1  100.0%            JS: ~ondata node:internal/readline/interface:267:18
-      1    2.0%    JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:91:28
-      1  100.0%      Builtin: SetPrototypeForEach
-      1  100.0%        JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:41:17
-      1  100.0%          JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
-      1  100.0%            JS: *<anonymous> node:internal/readline/interface:621:17
 
-      9    3.7%  Builtin: SetPrototypeForEach
-      9  100.0%    JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:41:17
-      9  100.0%      JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
-      9  100.0%        JS: *<anonymous> node:internal/readline/interface:621:17
-      7   77.8%          JS: ^ondata node:internal/readline/interface:267:18
-      7  100.0%            JS: *emit node:events:489:44
-      2   22.2%          JS: ~ondata node:internal/readline/interface:267:18
-      2  100.0%            JS: *emit node:events:489:44
-
-      8    3.3%  JS: *writeOrBuffer node:internal/streams/writable:550:23
-      8  100.0%    JS: *_write node:internal/streams/writable:452:16
-      8  100.0%      JS: *log node:internal/console/constructor:413:6
-      8  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
-      8  100.0%          JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
-      7   87.5%            JS: *<anonymous> node:internal/readline/interface:621:17
-      1   12.5%            JS: +emit node:events:489:44
-
-      8    3.3%  JS: *log node:internal/console/constructor:413:6
-      8  100.0%    Builtin: CallApiCallbackOptimizedNoProfiling
-      8  100.0%      JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
-      7   87.5%        JS: *<anonymous> node:internal/readline/interface:621:17
-      4   57.1%          JS: ~ondata node:internal/readline/interface:267:18
-      4  100.0%            JS: *emit node:events:489:44
-      3   42.9%          JS: ^ondata node:internal/readline/interface:267:18
-      3  100.0%            JS: *emit node:events:489:44
-      1   12.5%        JS: +emit node:events:489:44
-      1  100.0%          JS: +<anonymous> node:internal/readline/interface:621:17
-      1  100.0%            JS: ~ondata node:internal/readline/interface:267:18
-
-      7    2.9%  fputc@@GLIBC_2.2.5
-      3   42.9%    /usr/bin/node
-      1   33.3%      JS: ~writeOrBuffer node:internal/streams/writable:550:23
-      1  100.0%        JS: ~_write node:internal/streams/writable:452:16
-      1  100.0%          JS: ~Writable.write node:internal/streams/writable:506:36
-      1  100.0%            Builtin: CallApiCallbackGeneric
-      1   33.3%      JS: ~Writable.write node:internal/streams/writable:506:36
-      1  100.0%        Builtin: CallApiCallbackGeneric
-      1  100.0%          JS: ~<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
-      1  100.0%            JS: ~<anonymous> node:internal/readline/interface:467:12
-      1   33.3%      Builtin: StringPrototypeSlice
-      1  100.0%        JS: ~<anonymous> node:internal/main/run_main_module:1:1
-      2   28.6%    JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
-      2  100.0%      JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
-      1   50.0%        Script: ~<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:1:1
-      1  100.0%          Builtin: GeneratorPrototypeNext
-      1  100.0%            Builtin: CallApiCallbackGeneric
-      1   50.0%        JS: ~<anonymous> node:readline:1:1
+      4    2.0%  fputc@@GLIBC_2.2.5
+      3   75.0%    JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      3  100.0%      JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      1   33.3%        JS: ~<anonymous> node:stream:1:1
       1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
-      1  100.0%            JS: ~<anonymous> node:internal/main/run_main_module:1:1
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      1   33.3%        JS: ~<anonymous> node:internal/streams/operators:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      1   33.3%        JS: ~<anonymous> node:internal/readline/emitKeypressEvents:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      1   25.0%    /usr/bin/node
+      1  100.0%      JS: ~<anonymous> node:internal/main/run_main_module:1:1
 
-      6    2.4%  Builtin: FindOrderedHashSetEntry
-      4   66.7%    JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:41:17
-      4  100.0%      JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
-      4  100.0%        JS: *<anonymous> node:internal/readline/interface:621:17
-      3   75.0%          JS: ^ondata node:internal/readline/interface:267:18
-      3  100.0%            JS: *emit node:events:489:44
-      1   25.0%          JS: ~ondata node:internal/readline/interface:267:18
-      1  100.0%            JS: *emit node:events:489:44
-      2   33.3%    Builtin: SetPrototypeHas
-      2  100.0%      JS: +<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:41:17
-      2  100.0%        JS: +<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
-      2  100.0%          JS: +emit node:events:489:44
-      2  100.0%            JS: +<anonymous> node:internal/readline/interface:621:17
+      4    2.0%  JS: *<anonymous> node:internal/readline/interface:621:17
+      2   50.0%    JS: ~ondata node:internal/readline/interface:267:18
+      2  100.0%      JS: *emit node:events:489:44
+      2  100.0%        JS: ~addChunk node:internal/streams/readable:557:18
+      2  100.0%          JS: ~readableAddChunkPushByteMode node:internal/streams/readable:470:38
+      2  100.0%            JS: ~Readable.push node:internal/streams/readable:394:35
+      2   50.0%    JS: ^ondata node:internal/readline/interface:267:18
+      2  100.0%      JS: *emit node:events:489:44
+      2  100.0%        JS: ^addChunk node:internal/streams/readable:557:18
+      2  100.0%          JS: ^readableAddChunkPushByteMode node:internal/streams/readable:470:38
+      1   50.0%            JS: ~Readable.push node:internal/streams/readable:394:35
+      1   50.0%            JS: ^Readable.push node:internal/streams/readable:394:35
 
-      5    2.0%  Builtin: RecordWriteSaveFP
-      3   60.0%    Builtin: ArrayPrototypeJoin
-      3  100.0%      JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
+      3    1.5%  JS: *writeOrBuffer node:internal/streams/writable:550:23
+      3  100.0%    JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      2   66.7%      JS: *<anonymous> node:internal/readline/interface:621:17
+      2  100.0%        JS: ^ondata node:internal/readline/interface:267:18
+      2  100.0%          JS: *emit node:events:489:44
+      2  100.0%            JS: ^addChunk node:internal/streams/readable:557:18
+      1   33.3%      JS: +emit node:events:489:44
+      1  100.0%        JS: +<anonymous> node:internal/readline/interface:621:17
+      1  100.0%          JS: ~ondata node:internal/readline/interface:267:18
+      1  100.0%            JS: +emit node:events:489:44
+
+      3    1.5%  JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:92:28
+      3  100.0%    Builtin: SetPrototypeForEach
+      3  100.0%      JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:42:17
+      3  100.0%        JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      3  100.0%          JS: *<anonymous> node:internal/readline/interface:621:17
+      3  100.0%            JS: ^ondata node:internal/readline/interface:267:18
+
+      3    1.5%  Builtin: SetPrototypeForEach
+      3  100.0%    JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:42:17
+      3  100.0%      JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
       3  100.0%        JS: *<anonymous> node:internal/readline/interface:621:17
       2   66.7%          JS: ^ondata node:internal/readline/interface:267:18
       2  100.0%            JS: *emit node:events:489:44
       1   33.3%          JS: ~ondata node:internal/readline/interface:267:18
       1  100.0%            JS: *emit node:events:489:44
-      2   40.0%    JS: *_addListener node:events:545:22
-      2  100.0%      JS: *log node:internal/console/constructor:413:6
-      2  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
-      2  100.0%          JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
-      2  100.0%            JS: *<anonymous> node:internal/readline/interface:621:17
 
-      4    1.6%  v8::Context::GetNumberOfEmbedderDataFields()
-      3   75.0%    JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
+      3    1.5%  Builtin: RecordWriteSaveFP
+      3  100.0%    Builtin: ArrayPrototypeJoin
+      2   66.7%      JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      2  100.0%        JS: *<anonymous> node:internal/readline/interface:621:17
+      1   50.0%          JS: ~ondata node:internal/readline/interface:267:18
+      1  100.0%            JS: *emit node:events:489:44
+      1   50.0%          JS: ^ondata node:internal/readline/interface:267:18
+      1  100.0%            JS: *emit node:events:489:44
+      1   33.3%      JS: +<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      1  100.0%        JS: +emit node:events:489:44
+      1  100.0%          JS: +<anonymous> node:internal/readline/interface:621:17
+      1  100.0%            JS: ~ondata node:internal/readline/interface:267:18
+
+      3    1.5%  Builtin: LoadGlobalICTrampoline
+      2   66.7%    JS: *<anonymous> node:internal/readline/interface:621:17
+      2  100.0%      JS: ^ondata node:internal/readline/interface:267:18
+      2  100.0%        JS: *emit node:events:489:44
+      2  100.0%          JS: ^addChunk node:internal/streams/readable:557:18
+      2  100.0%            JS: ^readableAddChunkPushByteMode node:internal/streams/readable:470:38
+      1   33.3%    JS: *emit node:events:489:44
+      1  100.0%      JS: +<anonymous> node:internal/readline/interface:621:17
+      1  100.0%        JS: ~ondata node:internal/readline/interface:267:18
+      1  100.0%          JS: +emit node:events:489:44
+      1  100.0%            JS: ~addChunk node:internal/streams/readable:557:18
+
+      3    1.5%  Builtin: CreateTypedArray
+      2   66.7%    JS: *fromStringFast node:buffer:496:24
+      2  100.0%      JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      2  100.0%        JS: *<anonymous> node:internal/readline/interface:621:17
+      2  100.0%          JS: ~ondata node:internal/readline/interface:267:18
+      2  100.0%            JS: *emit node:events:489:44
+      1   33.3%    Builtin: TypedArrayConstructor
+      1  100.0%      JS: +FastBuffer node:internal/buffer:960:1
+      1  100.0%        JS: +fromStringFast node:buffer:496:24
+      1  100.0%          JS: +from node:buffer:337:28
+      1  100.0%            JS: +_write node:internal/streams/writable:452:16
+
+      3    1.5%  Builtin: CallFunction_ReceiverIsAny
+      1   33.3%    JS: ~ondata node:internal/readline/interface:267:18
+      1  100.0%      JS: *emit node:events:489:44
+      1  100.0%        JS: ~addChunk node:internal/streams/readable:557:18
+      1  100.0%          JS: ~readableAddChunkPushByteMode node:internal/streams/readable:470:38
+      1  100.0%            JS: ~Readable.push node:internal/streams/readable:394:35
+      1   33.3%    JS: ^processTicksAndRejections node:internal/process/task_queues:72:35
+      1   33.3%    JS: +<anonymous> node:internal/readline/interface:621:17
+      1  100.0%      JS: ~ondata node:internal/readline/interface:267:18
+      1  100.0%        JS: +emit node:events:489:44
+      1  100.0%          JS: ~addChunk node:internal/streams/readable:557:18
+      1  100.0%            JS: ~readableAddChunkPushByteMode node:internal/streams/readable:470:38
+
+      3    1.5%  Builtin: ArrayPrototypeJoin
+      3  100.0%    JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
       3  100.0%      JS: *<anonymous> node:internal/readline/interface:621:17
       2   66.7%        JS: ^ondata node:internal/readline/interface:267:18
       2  100.0%          JS: *emit node:events:489:44
@@ -317,84 +383,43 @@ Statistical profiling result from isolate-0x56161a528000-39378-v8.log, (245 tick
       1   33.3%        JS: ~ondata node:internal/readline/interface:267:18
       1  100.0%          JS: *emit node:events:489:44
       1  100.0%            JS: ~addChunk node:internal/streams/readable:557:18
-      1   25.0%    JS: +<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
-      1  100.0%      JS: +emit node:events:489:44
-      1  100.0%        JS: +<anonymous> node:internal/readline/interface:467:12
-      1  100.0%          JS: ^<anonymous> node:internal/readline/interface:621:17
-      1  100.0%            JS: ~ondata node:internal/readline/interface:267:18
 
-      4    1.6%  std::ostream::put(char)@@GLIBCXX_3.4
-      3   75.0%    /usr/bin/node
-      1   33.3%      JS: ~writeOrBuffer node:internal/streams/writable:550:23
-      1  100.0%        JS: ~_write node:internal/streams/writable:452:16
-      1  100.0%          JS: ~Writable.write node:internal/streams/writable:506:36
-      1  100.0%            Builtin: CallApiCallbackGeneric
-      1   33.3%      JS: *get node:internal/console/constructor:221:14
-      1  100.0%        JS: *afterWrite node:internal/streams/writable:701:20
-      1  100.0%          JS: ~afterWriteTick node:internal/streams/writable:695:24
-      1   33.3%      Builtin: StringPrototypeSlice
-      1  100.0%        JS: ~<anonymous> node:internal/main/run_main_module:1:1
-      1   25.0%    JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      2    1.0%  v8::HandleScope::HandleScope(v8::Isolate*)
+      1   50.0%    JS: +utf8Write node:internal/buffer:988:19
+      1  100.0%      JS: +fromStringFast node:buffer:496:24
+      1  100.0%        JS: +fromString node:buffer:529:20
+      1  100.0%          JS: ^from node:buffer:337:28
+      1  100.0%            JS: +_write node:internal/streams/writable:452:16
+      1   50.0%    JS: *fromStringFast node:buffer:496:24
+      1  100.0%      JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      1  100.0%        JS: *<anonymous> node:internal/readline/interface:621:17
+      1  100.0%          JS: ^ondata node:internal/readline/interface:267:18
+      1  100.0%            JS: *emit node:events:489:44
+
+      2    1.0%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+      1   50.0%    JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
       1  100.0%      JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
-      1  100.0%        JS: ~<anonymous> node:stream:1:1
+      1  100.0%        JS: ~<anonymous> node:net:1:1
       1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
       1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      1   50.0%    /usr/bin/node
+      1  100.0%      JS: ~onwrite node:internal/streams/writable:617:17
+      1  100.0%        JS: ~WritableState.onwrite node:internal/streams/writable:351:18
+      1  100.0%          JS: ~SyncWriteStream._write node:internal/fs/sync_write_stream:25:44
+      1  100.0%            JS: ~writeOrBuffer node:internal/streams/writable:550:23
 
-      4    1.6%  Builtin: LoadIC
-      3   75.0%    JS: *log node:internal/console/constructor:413:6
-      3  100.0%      Builtin: CallApiCallbackOptimizedNoProfiling
-      3  100.0%        JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
-      3  100.0%          JS: *<anonymous> node:internal/readline/interface:621:17
-      3  100.0%            JS: ^ondata node:internal/readline/interface:267:18
-      1   25.0%    JS: *<anonymous> node:internal/readline/interface:621:17
-      1  100.0%      JS: ^ondata node:internal/readline/interface:267:18
-      1  100.0%        JS: *emit node:events:489:44
-      1  100.0%          JS: ^addChunk node:internal/streams/readable:557:18
-      1  100.0%            JS: ^readableAddChunkPushByteMode node:internal/streams/readable:470:38
-
-      4    1.6%  Builtin: CallApiCallbackOptimizedNoProfiling
-      1   25.0%    JS: *writeOrBuffer node:internal/streams/writable:550:23
-      1  100.0%      JS: *_write node:internal/streams/writable:452:16
-      1  100.0%        JS: *log node:internal/console/constructor:413:6
-      1  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
-      1  100.0%            JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
-      1   25.0%    JS: *_write node:internal/streams/writable:452:16
-      1  100.0%      JS: *log node:internal/console/constructor:413:6
-      1  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
-      1  100.0%          JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
+      2    1.0%  Builtin: StringIndexOf
+      2  100.0%    JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:92:28
+      2  100.0%      Builtin: SetPrototypeForEach
+      1   50.0%        JS: +<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:42:17
+      1  100.0%          JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
       1  100.0%            JS: *<anonymous> node:internal/readline/interface:621:17
-      1   25.0%    JS: *<anonymous> node:internal/readline/interface:621:17
-      1  100.0%      JS: ~ondata node:internal/readline/interface:267:18
-      1  100.0%        JS: *emit node:events:489:44
-      1  100.0%          JS: ~addChunk node:internal/streams/readable:557:18
-      1  100.0%            JS: ~readableAddChunkPushByteMode node:internal/streams/readable:470:38
-      1   25.0%    JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
-      1  100.0%      JS: *<anonymous> node:internal/readline/interface:621:17
-      1  100.0%        JS: ^ondata node:internal/readline/interface:267:18
-      1  100.0%          JS: *emit node:events:489:44
-      1  100.0%            JS: ^addChunk node:internal/streams/readable:557:18
+      1   50.0%        JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:42:17
+      1  100.0%          JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      1  100.0%            JS: *<anonymous> node:internal/readline/interface:621:17
 
-      3    1.2%  v8::ArrayBufferView::Buffer()
-      2   66.7%    JS: *writeOrBuffer node:internal/streams/writable:550:23
-      2  100.0%      JS: *_write node:internal/streams/writable:452:16
-      2  100.0%        JS: *log node:internal/console/constructor:413:6
-      2  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
-      2  100.0%            JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
-      1   33.3%    JS: +writeSync node:fs:943:19
-      1  100.0%      JS: +writeOrBuffer node:internal/streams/writable:550:23
-      1  100.0%        JS: +_write node:internal/streams/writable:452:16
-      1  100.0%          JS: +<anonymous> node:internal/console/constructor:286:56
-      1  100.0%            JS: +log node:internal/console/constructor:413:6
-
-      3    1.2%  JS: *onwrite node:internal/streams/writable:617:17
-      3  100.0%    JS: *writeOrBuffer node:internal/streams/writable:550:23
-      3  100.0%      JS: *_write node:internal/streams/writable:452:16
-      3  100.0%        JS: *log node:internal/console/constructor:413:6
-      3  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
-      3  100.0%            JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
-
-      3    1.2%  Builtin: ArrayPrototypeJoin
-      2   66.7%    JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
+      2    1.0%  Builtin: LoadJoinElement_FastSmiOrObjectElements_0
+      2  100.0%    JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
       2  100.0%      JS: *<anonymous> node:internal/readline/interface:621:17
       1   50.0%        JS: ~ondata node:internal/readline/interface:267:18
       1  100.0%          JS: *emit node:events:489:44
@@ -402,9 +427,16 @@ Statistical profiling result from isolate-0x56161a528000-39378-v8.log, (245 tick
       1   50.0%        JS: ^ondata node:internal/readline/interface:267:18
       1  100.0%          JS: *emit node:events:489:44
       1  100.0%            JS: ^addChunk node:internal/streams/readable:557:18
-      1   33.3%    JS: ^breakIntoClusters file:///home/brodenbenson/git%20repos/igpay/igpay.js:39:27
-      1  100.0%      JS: ^igpay file:///home/brodenbenson/git%20repos/igpay/igpay.js:110:15
-      1  100.0%        JS: ^<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:115:15
-      1  100.0%          JS: ^emit node:events:489:44
-      1  100.0%            JS: ^<anonymous> node:internal/readline/interface:467:12
+
+      2    1.0%  Builtin: LoadIC
+      1   50.0%    JS: *writeOrBuffer node:internal/streams/writable:550:23
+      1  100.0%      JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      1  100.0%        JS: *<anonymous> node:internal/readline/interface:621:17
+      1  100.0%          JS: ~ondata node:internal/readline/interface:267:18
+      1  100.0%            JS: *emit node:events:489:44
+      1   50.0%    JS: *<anonymous> file:///home/brodenbenson/git%20repos/igpay/igpay.js:116:15
+      1  100.0%      JS: *<anonymous> node:internal/readline/interface:621:17
+      1  100.0%        JS: ^ondata node:internal/readline/interface:267:18
+      1  100.0%          JS: *emit node:events:489:44
+      1  100.0%            JS: ^addChunk node:internal/streams/readable:557:18
 

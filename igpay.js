@@ -29,6 +29,7 @@ const vowel = new Set(
 );
 const y = new Set(['y']);
 
+
 // Sets up the reader to take input
 const rl = readline.createInterface({
   input: process.stdin,
@@ -50,7 +51,7 @@ function breakIntoClusters(words) {
       // check for grouping openers like (
       if (firstChar === 1 && openingSet.has(word[i])) {
         newWord += word[i];
-      // check for y as the first character of word (consanant y)
+        // check for y as the first character of word (consanant y)
       } else if (firstChar === 1 && y.has(word[i].toLowerCase())) {
         if (capitalSet.has(word[i])) {
           capitalize = 1;
@@ -59,23 +60,23 @@ function breakIntoClusters(words) {
         conCluster += word[i];
         // change the state to know we are no longer on the first character
         firstChar = 0;
-      // check if word begins with vowel
+        // check if word begins with vowel
       } else if (firstChar === 1 && vowel.has(word[i].toLowerCase())) {
         // capitalization set
         if (capitalSet.has(word[i])) {
           capitalize = 1;
         }
-        // This was autocorrect to be this way
+        // This was autocorrect by lint:fix to be this way
         newWord = `${word}yay`;
         break;
-      // continue consonantSet
+        // continue consonantSet
       } else if (consonantSet.has(word[i].toLowerCase())) {
         if (firstChar === 1 && capitalSet.has(word[i])) {
           capitalize = 1;
         }
         firstChar = 0;
         conCluster += word[i].toLowerCase();
-      // end logic upon finding the first vowel
+        // end logic upon finding the first vowel
       } else if (vowel.has(word[i].toLowerCase())) {
         if (firstChar === 1 && capitalSet.has(word[i])) {
           capitalize = 1;
@@ -113,5 +114,5 @@ function igpay(line) {
 }
 
 rl.on('line', (line) => {
-  console.log(igpay(line));
+  process.stdout.write(igpay(line) + '\n')
 });
