@@ -29,7 +29,6 @@ const vowel = new Set(
 );
 const y = new Set(['y']);
 
-
 // Sets up the reader to take input
 const rl = readline.createInterface({
   input: process.stdin,
@@ -48,7 +47,7 @@ function breakIntoClusters(words) {
 
     // for each word in a line
     for (let i = 0; i < word.length; i += 1) {
-      // check for grouping openers like (
+      // check for grouping openers like ({[<
       if (firstChar === 1 && openingSet.has(word[i])) {
         newWord += word[i];
         // check for y as the first character of word (consanant y)
@@ -114,5 +113,5 @@ function igpay(line) {
 }
 
 rl.on('line', (line) => {
-  process.stdout.write(igpay(line) + '\n')
+  process.stdout.write(`${igpay(line)}\n`);
 });
